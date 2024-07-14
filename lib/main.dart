@@ -35,7 +35,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   double _leftNumber = 0;
-  double _righttNumber = 0;
+  double _rightNumber = 0;
   String _sign = "";
   String _operation = "";
   String _result = "";
@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void onKeyTapped(int num) {
     String newOperation = "$_operation$num";
     double newLeft = _leftNumber;
-    double newRight = _righttNumber;
+    double newRight = _rightNumber;
 
     if (_sign.isNotEmpty) {
       List<String> arr = newOperation.split(_sign);
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _operation = newOperation;
       _leftNumber = newLeft;
-      _righttNumber = newRight;
+      _rightNumber = newRight;
     });
   }
 
@@ -118,16 +118,16 @@ class _MyHomePageState extends State<MyHomePage> {
     String resultStr = "";
     switch (_sign) {
       case "+":
-        result = _leftNumber + _righttNumber;
+        result = _leftNumber + _rightNumber;
         break;
       case "x":
-        result = _leftNumber * _righttNumber;
+        result = _leftNumber * _rightNumber;
         break;
       case "-":
-        result = _leftNumber - _righttNumber;
+        result = _leftNumber - _rightNumber;
         break;
       case "/":
-        result = _leftNumber / _righttNumber;
+        result = _leftNumber / _rightNumber;
         break;
       default:
     }
@@ -145,7 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void resetValues() {
     setState(() {
       _leftNumber = 0;
-      _righttNumber = 0;
+      _rightNumber = 0;
       _sign = "";
       _operation = "";
       _result = "";
