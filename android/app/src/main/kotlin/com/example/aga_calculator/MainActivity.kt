@@ -1,4 +1,4 @@
-package com.example.aga_calculator
+package bi.syntax.aga_calculator
 
 import io.flutter.embedding.android.FlutterActivity
 

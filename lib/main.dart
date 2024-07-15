@@ -13,13 +13,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aga Calculator',
+      title: 'Aga Calculatrice',
       themeMode: ThemeMode.light,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.deepPurple,
+        ),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Aga Calculator'),
+      home: const MyHomePage(title: 'Aga Calculatrice'),
     );
   }
 }
