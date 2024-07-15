@@ -69,6 +69,27 @@ android {
             signingConfig = signingConfigs.release
         }
     }
+
+    flavorDimensions += "default"
+
+    productFlavors {
+        development {
+            dimension "default"
+            resValue "string", "app_name", "Gaharuzo Dev"
+            applicationIdSuffix ".dev"
+        }
+        staging {
+            dimension "default"
+            resValue "string", "app_name", "Gaharuzo Stage"
+            applicationIdSuffix ".stg"
+        }
+        production {
+            dimension "default"
+            resValue "string", "app_name", "Gaharuzo"
+            applicationIdSuffix ""
+        }
+    }
+    
 }
 
 flutter {
