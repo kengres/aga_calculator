@@ -28,7 +28,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Aga Calculatrice',
       themeMode: ThemeMode.light,
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepPurple,

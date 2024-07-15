@@ -157,6 +157,7 @@ class _MyHomePageState extends State<HomeScreen> {
         child: Align(
           alignment: Alignment.bottomCenter,
           child: Container(
+            constraints: const BoxConstraints(maxWidth: 460),
             color: Colors.transparent,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
